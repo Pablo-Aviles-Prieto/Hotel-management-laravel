@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Room;
 
-class RoomsController extends Controller
+class LandpageController extends Controller
 {
-    public function landpage()
+    public function renderView()
     {
-        $rooms = Room::withOffers()->get();
+        $rooms = Room::all();
         return view('landpage', compact('rooms'));
     }
 }
