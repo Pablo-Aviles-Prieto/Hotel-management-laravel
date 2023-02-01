@@ -1,0 +1,45 @@
+version: '3.7'
+services:
+  #APACHE Y PHP
+  app:
+    build: ./.docker
+    image: laravel-project
+    container_name: laravel-project
+    ports:
+      - 89:80
+    volumes:
+      - ./:/var/www/html
+  #MYSQL
+  db:
+    image: mysql:5.7
+    restart: always
+    container_name: laravel-db
+    ports:
+      - "3309:3306"
+    environment:
+      MYSQL_DATABASE: 'hotel_miranda'
+      MYSQL_ROOT_PASSWORD: 'abc123.'
+    volumes:
+      - ~/Databases/hotel_miranda-backend:/var/lib/mysql
+  #PhpMyAdmin
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    container_name: hotel_miranda-phpmyadmin
+    ports:
+      - "8089:80"
+    environment:
+      PMA_HOST: db #Nombre del host mysql
+      UPLOAD_LIMIT: 100M #modifica upload_max_file_size y post_max_size
+  #Redis
+#   redis:
+#     image: redis:4.0
+#     container_name: billing-redis
+#     ports:
+#       - "6382:6379"
+# docker-compose up -d
+# docker-compose up -d --build
+# docker exec -it e07e248f2817 bash
+# docker-compose build --no-cache --force-rm nombredelservicio(db,app,phpmyadmin)
