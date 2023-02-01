@@ -1,0 +1,13 @@
+// General styles
+@use 'modules/shared/main_styles';
+
+// Shared styles
+@use 'modules/shared/slider_btns';
+@use 'modules/shared/section_description';
+
+// Dedicated styles
+@use 'modules/rooms-details-page/details';
+@use 'modules/rooms-details-page/amenities';
+@use 'modules/rooms-details-page/founder';
+@use 'modules/rooms-details-page/cancellation';
+@use 'modules/rooms-details-page/related';

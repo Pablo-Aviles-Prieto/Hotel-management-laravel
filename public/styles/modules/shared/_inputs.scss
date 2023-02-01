@@ -1,0 +1,41 @@
+@use 'variables';
+
+.input-field {
+  position: relative;
+  height: calc(1.5em + 1rem + 2px);
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  color: #686868;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+  border-bottom: 2px solid variables.$color-light-gold;
+  margin-bottom: 1rem;
+  color-scheme: dark;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  display: block;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  border-width: thin;
+  filter: invert(0.5) sepia(1);
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+}
+input::-webkit-datetime-edit-fields-wrapper {
+  position: relative;
+  left: 0;
+}
+input::-webkit-datetime-edit {
+  position: relative;
+  left: 12%;
+}

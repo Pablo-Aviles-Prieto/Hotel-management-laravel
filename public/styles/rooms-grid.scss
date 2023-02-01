@@ -1,0 +1,9 @@
+// General styles
+@use 'modules/shared/main_styles';
+
+// Shared styles
+@use 'modules/shared/slider_btns';
+@use 'modules/shared/section_description';
+
+// Dedicated styles
+@use 'modules/rooms/rooms_grid';
