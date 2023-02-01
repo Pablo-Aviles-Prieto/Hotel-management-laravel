@@ -32,14 +32,14 @@
                   </div>
                 </a>
                 <div class="container-nav-navbar-content-logo-container-text">
-                  <a href="./index.php"><span>Hotel</span> Miranda</a>
+                  <a href="/"><span>Hotel</span> Miranda</a>
                 </div>
                 <div class="container-nav-navbar-content-pages">
                   <ul>
-                    <li><a href="./about-us.php">About Us</a></li>
-                    <li><a href="./rooms-grid.php">Rooms</a></li>
-                    <li><a href="./offers.php">Offers</a></li>
-                    <li><a href="./contact.php">Contact</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/rooms-grid">Rooms</a></li>
+                    <li><a href="/offers">Offers</a></li>
+                    <li><a href="/contact">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -57,10 +57,10 @@
       </div>
       <aside class="mobile-menu mobile-menu--closed">
         <ul>
-          <li><a href="./about-us.php">About Us</a></li>
-          <li><a href="./rooms-grid.php">Rooms</a></li>
-          <li><a href="./offers.php">Offers</a></li>
-          <li><a href="./contact.php">Contact</a></li>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/rooms-grid">Rooms</a></li>
+          <li><a href="/offers">Offers</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </aside>
     </header>
