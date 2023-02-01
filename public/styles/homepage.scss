@@ -1,0 +1,16 @@
+// General styles
+@use 'modules/shared/main_styles';
+
+// Shared styles
+@use 'modules/shared/slider_btns';
+@use 'modules/shared/section_description';
+
+// Dedicated styles
+@use 'modules/main-page/first_section';
+@use 'modules/main-page/availability_section';
+@use 'modules/main-page/about_us';
+@use 'modules/main-page/rooms';
+@use 'modules/main-page/intro_video';
+@use 'modules/main-page/facilities';
+@use 'modules/main-page/menu';
+@use 'modules/main-page/stats';

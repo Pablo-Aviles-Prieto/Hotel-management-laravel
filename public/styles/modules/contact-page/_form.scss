@@ -1,0 +1,63 @@
+@use '../shared/variables';
+@use '../shared/buttons';
+
+#form-section {
+  padding: 2rem 1rem;
+  @media (min-width: 1100px) {
+    padding: 2rem 15%;
+  }
+}
+
+.form-container {
+  &-content {
+    @media (min-width: 1100px) {
+      padding: 0 2.5rem;
+    }
+    &-info-block--container {
+      position: relative;
+      object {
+        position: absolute;
+        left: 15px;
+        top: 19px;
+      }
+    }
+    input,
+    textarea {
+      padding: 1.2rem 1rem;
+      padding-left: 3rem;
+      border: 0;
+      font-family: variables.$font-roboto;
+      font-size: 16px;
+      line-height: 19px;
+      color: variables.$color-half-grey;
+      background-color: variables.$color-lightest-white;
+      width: 100%;
+    }
+    textarea {
+      margin-bottom: 2.5rem;
+      @media (min-width: 800px) {
+        height: 250px;
+      }
+    }
+    &-info {
+      @media (min-width: 800px) {
+        display: flex;
+        gap: 20px;
+        &-block {
+          width: 100%;
+        }
+      }
+      input {
+        margin-bottom: 1rem;
+      }
+    }
+    &-btn {
+      button {
+        @include buttons.customBtn;
+        display: block;
+        max-width: 260px;
+        margin: auto;
+      }
+    }
+  }
+}

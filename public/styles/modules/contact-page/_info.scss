@@ -1,0 +1,82 @@
+@use '../shared/variables';
+
+#info-section {
+  padding: 2rem 1rem;
+  @media (min-width: 1100px) {
+    padding: 2rem 15%;
+  }
+}
+
+.info-container {
+  #map {
+    height: 584px;
+  }
+  #distance-list-container {
+    h3 {
+      margin: 25px 0;
+      text-align: center;
+    }
+    li {
+      line-height: 25px;
+      b {
+        color: #86724c;
+      }
+    }
+  }
+  &--flex {
+    @media (min-width: 900px) {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+  }
+  &-card {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    padding: 1.5rem 0;
+    margin-bottom: 4rem;
+    width: 100%;
+    &-info {
+      h3 {
+        font-family: variables.$font-old-standard;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: variables.$color-light-black;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-family: variables.$font-roboto;
+        font-size: 14px;
+        line-height: 16px;
+        color: variables.$color-half-grey;
+        span {
+          display: block;
+        }
+      }
+    }
+    &-bground {
+      position: absolute;
+      font-family: variables.$font-roboto;
+      top: -30px;
+      right: 0;
+      font-weight: 700;
+      font-size: 180px;
+      letter-spacing: -6px;
+      color: variables.$color-lightest-white;
+      z-index: -1;
+    }
+  }
+  &-img {
+    height: 350px;
+    @media (min-width: 900px) {
+      height: 650px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

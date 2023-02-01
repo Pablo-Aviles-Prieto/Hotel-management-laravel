@@ -1,0 +1,18 @@
+@use 'variables';
+
+@mixin customBtn($bgcolor: variables.$color-light-gold, $border: 0) {
+  cursor: pointer;
+  min-width: 13.75rem;
+  height: 3.75rem;
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  color: variables.$color-white;
+  background-color: $bgcolor;
+  border: $border;
+}

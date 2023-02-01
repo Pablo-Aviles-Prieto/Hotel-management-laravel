@@ -1,0 +1,162 @@
+@use '../shared/variables';
+
+.popular-container {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: variables.$color-light-black;
+  @media (min-width: 1100px) {
+    padding: 3rem 15%;
+  }
+  &-title {
+    p {
+      font-size: 14px;
+      line-height: 15px;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      color: variables.$color-light-gold;
+    }
+    h3 {
+      font-family: variables.$font-old-standard;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.8px;
+      color: variables.$color-white;
+    }
+  }
+}
+
+.rooms-card {
+  position: relative;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 60.5rem;
+  }
+
+  &-top {
+    position: absolute;
+    bottom: -6px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: auto;
+    height: 3rem;
+    padding: 0 1.5rem;
+    background-color: variables.$color-white;
+    box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+    z-index: 1;
+  }
+
+  &-bottom {
+    position: absolute;
+    padding: 1rem 0;
+    height: 200px;
+    background-color: variables.$color-white;
+    text-align: center;
+    bottom: -200px;
+    width: 100%;
+    padding: 0 10px;
+    padding-top: 1rem;
+    &-title {
+      font-family: variables.$font-old-standard;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 36px;
+      letter-spacing: -1.2px;
+      color: variables.$color-light-black;
+    }
+    &-content {
+      font-family: variables.$font-roboto;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 1rem auto;
+      color: variables.$color-half-grey;
+    }
+    &-price {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 17px;
+      color: variables.$color-light-gold;
+      span {
+        margin-left: 1.5rem;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        color: variables.$color-half-grey;
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: variables.$color-white;
+  margin-top: 3rem;
+  margin-bottom: 13.5rem;
+}
+
+.swiper-slide-top {
+  position: absolute;
+  top: -1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: auto;
+  height: 3rem;
+  padding: 0 1.5rem;
+  background-color: variables.$color-white;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 60.5rem;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 35% !important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: variables.$color-light-gold;
+  color: variables.$color-white;
+}
+.swiper-button-next {
+  right: 0 !important;
+}
+.swiper-button-prev {
+  left: 0 !important;
+}

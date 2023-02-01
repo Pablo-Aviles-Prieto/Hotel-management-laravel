@@ -1,0 +1,72 @@
+@use '../shared/variables';
+@use '../shared/inputs';
+@use '../shared/buttons';
+
+.availability-container {
+  min-height: 325px;
+  padding: 3rem 1rem 1.5rem 1rem;
+  background-color: variables.$color-light-black;
+  &-form {
+    color: variables.$color-white;
+    &-input {
+      margin-bottom: 1rem;
+      label {
+        font-family: variables.$font-roboto;
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+      }
+    }
+    &-btn {
+      button {
+        @include buttons.customBtn;
+      }
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .availability-container {
+    &-form-input {
+      width: 60%;
+      max-width: 330px;
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .availability-container {
+    padding: 3rem 15%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .availability-container {
+    min-height: auto;
+    &-form {
+      &--flex {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .availability-container {
+    padding: 2rem 15% 1rem 15%;
+    &-form {
+      display: flex;
+      gap: 2rem;
+      &--flex {
+        width: 100%;
+      }
+      &-btn {
+        button {
+          min-width: 250px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

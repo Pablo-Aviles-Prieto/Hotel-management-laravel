@@ -1,0 +1,13 @@
+@use '../shared/variables';
+@use '../shared/facilities';
+
+#facilities-section {
+  @include facilities.facilitiesSlider(
+    $bgroundContainer: variables.$color-light-black,
+    $bgroundCard: variables.$color-medium-black,
+    $titleColor: variables.$color-white,
+    $numberColor: variables.$color-light-black,
+    $cardTitle: variables.$color-white,
+    $cardDescription: variables.$color-white
+  );
+}

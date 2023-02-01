@@ -1,0 +1,97 @@
+@use '../shared/variables';
+@use '../shared/buttons';
+
+.intro-video-container {
+  padding: 3rem 1rem;
+  color: variables.$color-white;
+  background-color: variables.$color-light-black;
+  &-content {
+    &-legend {
+      padding: 1rem 0;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 15px;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      color: variables.$color-light-gold;
+    }
+    &-title {
+      margin: 1rem auto;
+      font-family: variables.$font-old-standard;
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 60px;
+      letter-spacing: -1.2px;
+    }
+    &-description {
+      font-size: 14px;
+      line-height: 24px;
+      color: variables.$color-ligth-grey;
+    }
+    &-video {
+      margin: 2rem auto;
+      max-width: 53.2rem;
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    button {
+      @include buttons.customBtn;
+    }
+  }
+}
+
+@media (min-width: 560px) {
+  .intro-video-container {
+    &-content {
+      &-title {
+        max-width: 22rem;
+        margin: 1rem 0;
+      }
+      &-description {
+        max-width: 22rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro-video-container {
+    padding: 3rem 15%;
+  }
+}
+
+@media (min-width: 1150px) {
+  #intro-video-section {
+    display: flex;
+  }
+  .intro-video-container {
+    width: 75%;
+    &-content {
+      &-video {
+        position: relative;
+        video {
+          position: absolute;
+          bottom: -27px;
+          right: -375px;
+          width: 524px;
+          height: 304px;
+          @media (min-width: 1400px) {
+            width: 674px;
+            height: 383px;
+            right: -517px;
+            top: -343px;
+          }
+          @media (min-width: 2300px) {
+            right: -718px;
+          }
+        }
+      }
+    }
+  }
+  .intro-video-desktop-container {
+    width: 25%;
+    background-color: variables.$color-medium-gold;
+  }
+}
