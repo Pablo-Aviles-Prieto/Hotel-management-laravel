@@ -46,10 +46,10 @@
             </div>
             <div class="container-nav-navbar-images-container">
               <div class="container-nav-navbar-images-container-border">
-                <object data="assets/icons/person_outline_black.svg" width="28"></object>
+                <object data="/assets/icons/person_outline_black.svg" width="28"></object>
               </div>
               <div class="container-nav-navbar-images-container-border">
-                <object data="assets/icons/search_black.svg" width="28"></object>
+                <object data="/assets/icons/search_black.svg" width="28"></object>
               </div>
             </div>
           </nav>
@@ -265,7 +265,7 @@
           <div class="footer-container-contact-info">
             <div class="contact-method">
               <div class="contact-method-logo">
-                <object data="assets/icons/phone.svg" width="60"></object>
+                <object data="/assets/icons/phone.svg" width="60"></object>
               </div>
               <div class="contact-method-info">
                 <div class="contact-method-info-title">Phone Number</div>
@@ -276,7 +276,7 @@
             </div>
             <div class="contact-method">
               <div class="contact-method-logo">
-                <object data="assets/icons/mail.svg" width="60"></object>
+                <object data="/assets/icons/mail.svg" width="60"></object>
               </div>
               <div id="mail-info-container" class="contact-method-info">
                 <div class="contact-method-info-title">Email</div>
@@ -287,7 +287,7 @@
             </div>
             <div class="contact-method">
               <div class="contact-method-logo">
-                <object data="assets/icons/location-footer.svg" width="60"></object>
+                <object data="/assets/icons/location-footer.svg" width="60"></object>
               </div>
               <div class="contact-method-info">
                 <div class="contact-method-info-title">Location</div>

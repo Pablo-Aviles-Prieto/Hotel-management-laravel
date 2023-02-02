@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class ContactController extends Controller
 {
-    public function contactView()
+    public function renderView()
     {
         $maps_api = env('MAPS_API');
         return view('contact', compact('maps_api'));
@@ -15,13 +15,6 @@ class ContactController extends Controller
 
     public function saveForm(Request $request)
     {
-        // $this->validate($request, [
-        //     'user_email' => "required|min:5",
-        //     "user_name" => "required|min:2",
-        //     "message_subject" => "required|min:3",
-        //     "message_body" => "required|min:5"
-        // ]);
-
         $contact = [
             "date" => date("Y-m-d"),
             "user_name" => $request->input("name"),
