@@ -75,7 +75,7 @@
                   </div>
                 </div>
                 <div class="rooms-card-bottom-price">
-                  ${{$rooms[$i]['ratePerNight']}}/Night<a href="rooms-details.php?id={{$rooms[$i]['id']}}"><span>Booking Now</span></a>
+                  ${{$rooms[$i]['ratePerNight']}}/Night<a href="/rooms-details/{{$rooms[$i]['id']}}"><span>Booking Now</span></a>
                 </div>
               </div>
               </div>

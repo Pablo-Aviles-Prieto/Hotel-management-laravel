@@ -12,4 +12,9 @@ class Room extends Model
   {
     return $query->whereNotNull('offerPrice');
   }
+
+  public function bookings()
+  {
+    return $this->hasMany(Booking::class, 'roomId');
+  }
 }
