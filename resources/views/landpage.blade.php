@@ -39,7 +39,7 @@
     </section>
     <section id="availability-section">
       <div class="availability-container">
-        <form class="availability-container-form" action="rooms-list.php" method="GET">
+        <form class="availability-container-form" action="/rooms-list" method="GET">
           <div class="availability-container-form--flex">
             <div class="availability-container-form-input">
               <label for="arrival-input">Arrival Date</label>

@@ -6,13 +6,21 @@ use App\Models\Room;
 
 class RoomListController extends Controller
 {
-    public function renderRoomList($id = null)
+    public function renderRoomList()
     {
-        if ($id === null) {
-            return redirect('/');
+        if (isset($_GET['checkin']) && isset($_GET['checkout'])) {
+            $checkin = $_GET['checkin'];
+            $checkout = $_GET['checkout'];
+
+            $room = new Room;
+            $rooms = $room->getAvailableRooms($checkin, $checkout);
+            $rooms_length = count($rooms);
+        } else {
+            $room = new Room;
+            $rooms = $room->getAvailableRooms();
+            $rooms_length = count($rooms);
         }
 
-        $room = Room::find($id);
-        return view('rooms-details', compact('room'));
+        return view('rooms-list', compact('rooms', 'rooms_length'));
     }
 }

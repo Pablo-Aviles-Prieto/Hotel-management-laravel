@@ -20,3 +20,4 @@ Route::get('/offers', [OffersController::class, 'renderView']);
 
 Route::get('/rooms-grid', [RoomGridController::class, 'renderRoomGrid']);
 Route::get('/rooms-details/{id}', [RoomDetailsController::class, 'renderRoomDetails'])->where('id', '[0-9]+');
+Route::get('/rooms-list', [RoomListController::class, 'renderRoomList']);
