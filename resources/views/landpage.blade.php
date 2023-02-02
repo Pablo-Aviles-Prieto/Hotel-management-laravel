@@ -32,7 +32,7 @@
           <p>The perfect base for you</p>
         </div>
         <div class="first-section-container-btns">
-          <button class="solid-btn" onclick="location.href='about-us.php'">Take a tour</button
+          <button class="solid-btn" onclick="location.href='/about-us'">Take a tour</button
           ><button class="empty-btn" onclick="location.href='#about-section'">Learn more</button>
         </div>
       </div>
@@ -158,7 +158,7 @@
                   <object data="assets/icons/smoke-free.svg" width="18"></object>
                   <object data="assets/icons/cocktail.svg" width="18"></object>
                 </div>
-                <a href="rooms-details.php?id={{$room['id']}}">
+                <a href="/rooms-details/{{$room['id']}}">
                   <img src={{$room['photo']}} alt={{$room['roomName']}} />
                 </a>
                 <div class="swiper-slide-bottom">
